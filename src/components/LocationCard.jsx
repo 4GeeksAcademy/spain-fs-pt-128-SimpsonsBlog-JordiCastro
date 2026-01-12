@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useGlobalReducer from "../hooks/useGlobalReducer"
 
 export const LocationCard = ({ location }) => {
@@ -39,7 +40,9 @@ export const LocationCard = ({ location }) => {
                         <p className="">{location.use}</p>
                     </div>
                     <div className="buttons d-flex justify-content-between">
-                        <a href="#" className="btn btn-primary">More data</a>
+                        <Link to={`/location/${location.id}`}>
+                            <button className="btn btn-primary">More data</button>
+                        </Link>
                         <button
                             className="btn btn-outline-dark"
                             onClick={changeFavorite}

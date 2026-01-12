@@ -5,7 +5,6 @@ export const getCharacters = async (dispatch) => {
         return
     }
     const data = await response.json()
-    console.log(data);
     dispatch({type: "set_characters", payload: data.results})
 }
 
@@ -16,6 +15,5 @@ export const getLocations = async (dispatch) => {
         return
     }
     const data = await response.json()
-    console.log(data);
     dispatch({type: "set_locations", payload: data.results})
 }

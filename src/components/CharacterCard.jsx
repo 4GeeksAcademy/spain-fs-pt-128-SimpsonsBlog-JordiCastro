@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useGlobalReducer from "../hooks/useGlobalReducer"
 
 export const CharacterCard = ({ character }) => {
@@ -41,7 +42,9 @@ export const CharacterCard = ({ character }) => {
                         <p className="occupation">{character.occupation}</p>
                     </div>
                     <div className="buttons d-flex justify-content-between">
-                        <a href="#" className="btn btn-primary">More data</a>
+                        <Link to={`/character/${character.id}`}>
+                            <button className="btn btn-primary">More data</button>
+                        </Link>
                         <button
                             className="btn btn-outline-dark"
                             onClick={changeFavorite}

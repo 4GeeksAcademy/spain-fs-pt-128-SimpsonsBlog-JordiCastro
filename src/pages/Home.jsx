@@ -14,8 +14,6 @@ export const Home = () => {
 		getLocations(dispatch)
 	}, [])
 
-	console.log(store.locations);
-
 	return (
 		<div className="container">
 			<img className="mt-4 mb-2" src="https://fontmeme.com/permalink/260112/b12742d4.png" alt="fuente-de-los-simpson" border="0" />

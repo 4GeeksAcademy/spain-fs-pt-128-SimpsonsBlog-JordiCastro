@@ -25,9 +25,6 @@ export const Navbar = () => {
 							Favorites <span className="badge bg-secondary ms-1">{store.favorites.length}</span>
 						</button>
 						<ul className="dropdown-menu">
-							{/* <li><a className="dropdown-item" href="#">Action</a></li>
-							<li><a className="dropdown-item" href="#">Another action</a></li>
-							<li><a className="dropdown-item" href="#">Something else here</a></li> */}
 							{store.favorites.length === 0 ? (<li><a className="dropdown-item">Empty</a></li>) :
 								(
 									store.favorites.map((favorite, index) => {
