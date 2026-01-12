@@ -1,0 +1,18 @@
+.gender {
+    font-style: italic;
+    margin: 0;
+    color: grey;
+}
+.characterCard {
+    min-height: 600px;
+}
+.locationImg {
+    min-height: 250px;
+    max-height: 250px;
+}
+.locationCard {
+    min-height: 500px;
+}
+.locationTitle {
+    min-height: 50px;
+}
