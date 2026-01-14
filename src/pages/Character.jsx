@@ -8,6 +8,8 @@ export const Character = () => {
 
     const { store, dispatch } = useGlobalReducer();
 
+    //Como no da tiempo a cargar la API, necesitamos establecer el formato de "phrases" para que no se rompa la página, la otra forma de hacerlo es con
+    //"characterExtended?.phrases" ya que si no está characterExtended no muestra null sino que undefinded
     const [characterExtended, setCharacterExtended] = useState({ phrases: [] });
 
 
@@ -37,9 +39,9 @@ export const Character = () => {
                     <h5>Description:</h5>
                     <p className="">{characterExtended.description}</p>
                     <h5 className="mt-2">Phrases:</h5>
-                    {         
+                    {
                         characterExtended.phrases.map((phrase, index) => {
-                            return(
+                            return (
                                 <p key={index} className="my-0">{phrase}</p>
                             )
                         })

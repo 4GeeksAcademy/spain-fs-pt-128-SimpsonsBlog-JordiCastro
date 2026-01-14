@@ -1,3 +1,8 @@
+body{
+    background-image: url("https://i.pinimg.com/736x/ad/1e/2c/ad1e2c0c93696b30a9a6c916cb73d4b7.jpg");
+    background-repeat: no-repeat;
+     background-size: cover;
+}
 .gender {
     font-style: italic;
     margin: 0;
